@@ -3,8 +3,8 @@ title: Welcome to Middleman
 ---
 
 <% blog.articles.each do |article| %>
-  <%= time= article.date.strftime("%Y/%m/%d(#{%w(日 月 火 水 木 金 土)[article.date.wday]})") %>: <%= link_to article.title, host_url(article.url) %><br>
+  <%= time= article.date.strftime("%Y/%m/%d(#{%w(日 月 火 水 木 金 土)[article.date.wday]})") %>: <%= link_to article.title, article.url %><br>
   <%= article.summary %>
-  <%= link_to 'もっと読む', host_url(article.url)%>
+  <%= link_to 'もっと読む', article.url %>
   <hr>
 <% end %>

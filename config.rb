@@ -53,12 +53,6 @@ activate :blog do |blog|
 # blog.default_extension = ".md"
 end
 
-helpers do
-  def host_url(link)
-    link
-  end
-end
-
 configure :build do
   set :http_prefix, '/nobyuki_blog'
 end
