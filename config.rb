@@ -48,9 +48,9 @@ page '/*.txt', layout: false
 
 activate :blog do |blog|
   # ブログ機能のオプションを設定
-  blog.sources = "{year}-{month}-{day}-{title}.html"
-  blog.permalink = "{year}/{month}/{day}/{title}.html"
-  blog.default_extension = ".md"
+# blog.sources = "{year}-{month}-{day}-{title}.html"
+# blog.permalink = "{year}/{month}/{day}/{title}.html"
+# blog.default_extension = ".md"
 end
 
 helpers do
