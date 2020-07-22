@@ -59,5 +59,13 @@ helpers do
   end
 end
 
+configure :build do
+  set :http_prefix, '/nobyuki_blog'
+end
+
+activate :deploy do |deploy|
+  deploy.deploy_method = :git
+end
+
 set :markdown, :tables => true, :autolink => true, :gh_blockcode => true, :fenced_code_blocks => true
 set :markdown_engine, :redcarpet
